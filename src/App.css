@@ -2,7 +2,7 @@
   font-size: 48px;
   color: #ffffff;
   max-width: 433px;
-  margin-top: 80px;
+  margin-top: 40px;
   line-height: 56px;
 }
 
@@ -38,4 +38,48 @@ form {
 
 .btn:hover {
   background: #2f41c5;
+}
+
+.installments {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.installments .installment {
+  background: #2c2e43;
+  border-radius: 5px;
+  width: 100%;
+  padding: 24px;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: 2px solid #2c2e43;
+}
+
+.installments .installment:hover {
+  border-color: #394ff1;
+}
+
+.installments .installment+.installment {
+  margin-top: 16px;
+}
+
+.installments .installment .installment-periods {
+  color: #fff;
+  font-size: 18px;
+}
+
+.installments .installment .installment-addition {
+  color: #fff;
+  font-size: 18px;
+}
+
+.installments .installment .installment-total {
+  color: rgb(0, 189, 72);
+  font-size: 18px;
+  font-weight: bold;
 }
